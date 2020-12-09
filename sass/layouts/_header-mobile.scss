@@ -1,0 +1,48 @@
+.header {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: $white;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.backdrop-menu {
+    width: 100%;
+    height: 453px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.menu-list-item {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: #212121;
+
+&:not(:last-child) {
+    margin-bottom: 52px;
+}
+
+&:nth-child(3) {
+    margin-bottom: 60px;
+}
+}
