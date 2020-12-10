@@ -51,6 +51,8 @@ ol {
 
     @include for-size(desktop) {
         width: 1200px;
+        padding-left: 215px;
+        padding-right: 215px;
     }
 }
 

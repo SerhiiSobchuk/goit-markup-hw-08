@@ -97,6 +97,8 @@ ol {
 @media (min-width: 1200px) {
   .container {
     width: 1200px;
+    padding-left: 215px;
+    padding-right: 215px;
   }
 }
 
