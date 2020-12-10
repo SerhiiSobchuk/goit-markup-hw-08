@@ -10,7 +10,8 @@
         "../sass/components/_buttons.scss",
         "../sass/utils/_mixins.scss",
         "../sass/layouts/_header-mobile.scss",
-        "../sass/components/_contacts.scss"
+        "../sass/components/_contacts.scss",
+        "../sass/components/_back-menu.scss"
     ],
     "names": [],
     "file": "main.min.css"
