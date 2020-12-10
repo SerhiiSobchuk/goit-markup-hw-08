@@ -96,6 +96,10 @@ ol {
   padding-right: 0;
 }
 
+.is-hidden {
+  display: none;
+}
+
 .logo-w {
   display: inline-block;
   font-family: Raleway;
@@ -127,6 +131,10 @@ ol {
 .menu-btn:hover,
 .menu-btn:focus .menu-open {
   fill: #2196F3;
+}
+
+.menu-btn:focus {
+  border: 0;
 }
 
 .menu-open {
@@ -226,5 +234,11 @@ ol {
 
 .contacts-list-item:nth-child(1) {
   margin-bottom: 16px;
+}
+
+.backdrop-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 /*# sourceMappingURL=main.css.map */

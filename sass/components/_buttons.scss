@@ -7,6 +7,10 @@
 &:focus .menu-open {
     fill: #2196F3;
 }
+
+&:focus {
+    border: 0;
+}
 }
 
 .menu-open {
