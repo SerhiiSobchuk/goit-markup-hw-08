@@ -1,0 +1,24 @@
+.hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #2f303a;     
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    color: #ffffff;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    @include for-size(desktop) {
+        font-size: 44px;
+        line-height: 1.36;
+    }
+  }
