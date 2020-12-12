@@ -382,7 +382,6 @@ img {
   .advant-list {
     display: flex;
     flex-wrap: wrap;
-    width: calc((100%-30px)/2);
   }
 }
 
@@ -392,7 +391,7 @@ img {
 
 @media (min-width: 768px) {
   .advant-list-item {
-    width: calc((100%-30px)/2);
+    width: calc((100% - 30px) / 2);
   }
 }
 
@@ -400,29 +399,34 @@ img {
   margin-bottom: 30px;
 }
 
+.advant-list-item:nth-child(2n+1) {
+  margin-right: 30px;
+}
+
 .advant-list-item:before {
-  display: block;
+  display: inline-flex;
+  width: 100%;
   height: 120px;
   content: "";
   border-radius: 4px;
-  background-color: #757575;
+  background-color: #F5F4FA;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.icon-antenna {
+.icon-antenna::before {
   background-image: url("../images/icons/antenna.svg");
 }
 
-.icon-clock {
+.icon-clock::before {
   background-image: url("../images/icons/clock.svg");
 }
 
-.icon-diagram {
+.icon-diagram::before {
   background-image: url("../images/icons/diagram.svg");
 }
 
-.icon-astronaut {
+.icon-astronaut::before {
   background-image: url("../images/icons/astronaut.svg");
 }
 
