@@ -56,7 +56,7 @@ h3 {
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -69,9 +69,10 @@ img {
   height: auto;
 }
 
-ul,
-ol {
-  list-style-type: none;
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .container {
@@ -97,8 +98,6 @@ ol {
 @media (min-width: 1200px) {
   .container {
     width: 1200px;
-    padding-left: 215px;
-    padding-right: 215px;
   }
 }
 
@@ -109,11 +108,6 @@ ol {
 
 .link:hover, .link:focus {
   color: #2196F3;
-}
-
-.list {
-  padding-left: 0;
-  padding-right: 0;
 }
 
 .is-hidden {
@@ -284,13 +278,17 @@ ol {
   border-bottom: 1px solid #ECECEC;
 }
 
-.hero {
+.hero-section {
   padding-top: 118px;
   padding-bottom: 118px;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
-  background-color: #2f303a;
+}
+
+@media (min-width: 1200px) {
+  .hero-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .title {
@@ -311,6 +309,58 @@ ol {
   }
 }
 
+.overlay {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/mobile/hero-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/mobile/hero-mobile_2x.jpg");
+  }
+}
+
+@media (min-width: 768px) {
+  .overlay {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/tablet/hero-tablet.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/tablet/hero-tablet_2x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 1200px) {
+  .overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/desktop/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/desktop/hero_2x.jpg");
+  }
+}
+
 .advantages {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -325,42 +375,58 @@ ol {
 
 .advant-list {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding: 0;
 }
 
+@media (min-width: 768px) {
+  .advant-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc((100%-30px)/2);
+  }
+}
+
 .advant-list-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .advant-list-item {
+    width: calc((100%-30px)/2);
+  }
 }
 
 .advant-list-item:not(:last-child) {
   margin-bottom: 30px;
 }
 
-.advant-icons-container {
-  width: 450px;
+.advant-list-item:before {
+  display: block;
   height: 120px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #F5F4FA;
+  content: "";
   border-radius: 4px;
-  margin-bottom: 30px;
+  background-color: #757575;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.advant-icons {
-  width: 65px;
-  height: 70px;
+.icon-antenna {
+  background-image: url("../images/icons/antenna.svg");
+}
+
+.icon-clock {
+  background-image: url("../images/icons/clock.svg");
+}
+
+.icon-diagram {
+  background-image: url("../images/icons/diagram.svg");
+}
+
+.icon-astronaut {
+  background-image: url("../images/icons/astronaut.svg");
 }
 
 .advant-caption {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -372,8 +438,6 @@ ol {
 }
 
 .advant-desc {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;

@@ -15,7 +15,7 @@ h3 {
 }
 
 body {
-    font-family: Roboto, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -28,11 +28,11 @@ img {
     height: auto;
 }
 
-ul,
-ol {
-    list-style-type: none;
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
-
 
 .container {
     width: 100%;
@@ -51,8 +51,6 @@ ol {
 
     @include for-size(desktop) {
         width: 1200px;
-        padding-left: 215px;
-        padding-right: 215px;
     }
 }
 
@@ -66,11 +64,6 @@ ol {
     color: #2196F3;
     ;
 }
-}
-
-.list {
-    padding-left: 0;
-    padding-right: 0;
 }
 
 .is-hidden {

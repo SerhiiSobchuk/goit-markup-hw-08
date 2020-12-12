@@ -10,42 +10,59 @@
 
 .advant-list {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding: 0;
+
+    @include for-size(tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        width: calc((100%-30px)/2);
+    }
 }
 
 .advant-list-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
+
+    @include for-size(tablet) {
+        width: calc((100%-30px)/2);
+    }
 
 &:not(:last-child) {
     margin-bottom: 30px;
 }
-}
 
-.advant-icons-container {
-    width: 450px;
+&:before {
+    display: block;
     height: 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #F5F4FA;
+    content: "";
     border-radius: 4px;
-    margin-bottom: 30px;
+    background-color: #757575;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+}  
+
+.icon-antenna {
+    background-image: url("../images/icons/antenna.svg");
 }
 
-.advant-icons {
-    width: 65px;
-    height: 70px;
+
+.icon-clock {
+    background-image: url("../images/icons/clock.svg");
 }
+
+.icon-diagram {
+    background-image: url("../images/icons/diagram.svg");
+}
+
+
+.icon-astronaut {
+    background-image: url("../images/icons/astronaut.svg");
+}
+
+
+
 
 .advant-caption {
-    font-family: Roboto;
-    font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
@@ -57,8 +74,6 @@
 }
 
 .advant-desc {
-    font-family: Roboto;
-    font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
