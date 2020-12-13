@@ -897,8 +897,7 @@ img {
   margin-bottom: 30px;
 }
 
-.offer-list-item:hover::after, .offer-list-item:focus::after {
-  content: "";
+.offer-list-item:hover, .offer-list-item:focus {
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
@@ -909,7 +908,16 @@ img {
   margin-bottom: 0;
 }
 
+.offer-active {
+  position: relative;
+  overflow: hidden;
+}
+
 .offer-text {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
@@ -917,7 +925,9 @@ img {
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: #ffffff;
+  background: rgba(33, 150, 243, 0.9);
   width: 100%;
-  height: 294px;
+  height: 100%;
+  vertical-align: center;
 }
 /*# sourceMappingURL=main.css.map */
