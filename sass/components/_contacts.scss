@@ -1,43 +1,43 @@
 .mail-svg {
-    width: 16px;
-    height: 18px;
-    margin-right: 10px;
-    fill: #757575;
+  width: 16px;
+  height: 18px;
+  margin-right: 10px;
+  fill: #757575;
 }
 
 .tel-svg {
-    width: 16px;
-    height: 18px;
-    margin-right: 10px;
-    fill: #757575;
+  width: 16px;
+  height: 18px;
+  margin-right: 10px;
+  fill: #757575;
 }
 
 .contacts-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contacts-link {
-    display: flex;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.16;
-    letter-spacing: 0.02em;
-    color: #757575;
-    align-items: center;
+  display: flex;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: #757575;
+  align-items: center;
 }
 
-.contacts-list-item:hover .mail-svg{
-    fill:#2196F3;
+.contacts-list-item:hover .mail-svg {
+  fill: #2196f3;
 }
 
-.contacts-list-item:hover .tel-svg{
-    fill:#2196F3;
+.contacts-list-item:hover .tel-svg {
+  fill: #2196f3;
 }
 
 .contacts-list-item:nth-child(1) {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
