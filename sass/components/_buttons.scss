@@ -11,6 +11,14 @@
   &:focus {
     border: 0;
   }
+
+  @include for-size(tablet) {
+    display: none;
+  }
+
+  @include for-size(desktop) {
+    display: none;
+  }
 }
 
 .menu-open {
