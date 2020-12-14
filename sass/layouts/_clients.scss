@@ -17,6 +17,10 @@
   letter-spacing: 0.03em;
   color: #212121;
   padding-bottom: 30px;
+
+  @include for-size(desktop) {
+    font-size: 36px;
+  }
 }
 
 .clients-list {

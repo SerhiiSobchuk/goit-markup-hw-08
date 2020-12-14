@@ -16,10 +16,12 @@
 
   @include for-size(tablet) {
     padding-bottom: 30px;
+    justify-content: center;
   }
 
   @include for-size(desktop) {
     padding-bottom: 50px;
+    justify-content: center;
   }
 }
 
@@ -60,6 +62,13 @@
   @include for-size(tablet) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @include for-size(desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -68,9 +77,17 @@
   border: 1px solid #eeeeee;
   box-sizing: border-box;
   padding: 0;
+  margin: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 
   @include for-size(tablet) {
-    flex: calc((100% - 30px) / 2);
+    display: flex;
+    flex-wrap: wrap;
+    width: calc((100% - 30px) / 2);
+    margin: 0;
 
     &:nth-child(odd) {
       margin-right: 30px;
@@ -82,10 +99,16 @@
   }
 
   @include for-size(desktop) {
+    display: flex;
+    flex-wrap: wrap;
     width: calc((100% - 60px) / 3);
-  }
 
-  &:not(:last-child) {
-    margin-bottom: 30px;
+    &:nth-child(2) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(3n + 2) {
+      margin-right: 0;
+    }
   }
 }

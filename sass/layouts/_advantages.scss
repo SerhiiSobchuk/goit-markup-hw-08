@@ -79,6 +79,14 @@
   color: #212121;
   margin-bottom: 10px;
   padding-top: 30px;
+
+  @include for-size(tablet) {
+    text-align: left;
+  }
+
+  @include for-size(desktop) {
+    text-align: left;
+  }
 }
 
 .advant-desc {
