@@ -247,10 +247,19 @@ img {
   margin-bottom: 60px;
 }
 
+.active-page {
+  color: #2196f3;
+}
+
 .active-page::after {
   content: "";
   position: absolute;
   color: #2196f3;
+  border-bottom: 4px solid #2196f3;
+  border-radius: 2px;
+  left: 0;
+  right: 0;
+  bottom: -8px;
 }
 
 .mail-svg {
