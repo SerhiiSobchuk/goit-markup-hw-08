@@ -4,6 +4,34 @@
   padding-bottom: 60px;
 }
 
+.desktop-container {
+  display: block;
+
+  @include for-size(desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+.inner-container {
+  display: block;
+
+  @include for-size(tablet) {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 76px;
+    padding-right: 76px;
+  }
+}
+
+.contacts-container {
+  display: block;
+
+  @include for-size(desktop) {
+  }
+}
+
 .logo-footer {
   display: block;
   text-align: center;
@@ -17,6 +45,11 @@
   letter-spacing: 0.03em;
   color: #2196f3;
   margin-bottom: 20px;
+
+  @include for-size(desktop) {
+    font-size: 26px;
+    text-align: left;
+  }
 }
 
 .logos-footer {
@@ -25,6 +58,10 @@
 
 .address-list {
   padding-bottom: 60px;
+
+  @include for-size(desktop) {
+    padding-bottom: 0;
+  }
 }
 
 .address-list-item {
@@ -44,6 +81,18 @@
   &:not(:last-child) {
     margin-bottom: 8px;
   }
+
+  @include for-size(desktop) {
+    text-align: left;
+  }
+}
+
+.join {
+  display: block;
+
+  @include for-size(desktop) {
+    margin-left: 50px;
+  }
 }
 
 .join-title {
@@ -57,6 +106,10 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+
+  @include for-size(desktop) {
+    text-align: left;
+  }
 }
 
 .join-list {
@@ -102,16 +155,25 @@
   color: #ffffff;
   padding-bottom: 20px;
   margin: 0;
+
+  @include for-size(desktop) {
+    text-align: left;
+  }
 }
 
 .subscribe-form {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include for-size(desktop) {
+    flex-direction: row;
+    align-items: baseline;
+  }
 }
 
 .subsсribe-input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -128,6 +190,17 @@
   background: #2f303a;
   padding-left: 16px;
   margin-bottom: 20px;
+
+  @include for-size(tablet) {
+    width: 450px;
+    height: 50px;
+  }
+
+  @include for-size(desktop) {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+  }
 }
 
 .subscibe-btn {
