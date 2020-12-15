@@ -1114,6 +1114,13 @@ img {
   }
 }
 
+@media (min-width: 1200px) {
+  .inner-container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
 .contacts-container {
   display: block;
 }
@@ -1185,7 +1192,7 @@ img {
 
 @media (min-width: 1200px) {
   .join {
-    margin-left: 50px;
+    margin-left: 70px;
   }
 }
 
