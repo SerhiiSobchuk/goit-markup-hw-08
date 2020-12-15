@@ -39,9 +39,9 @@
                         <nav>    
 
                             <ul class="list menu-list">
-                                <li class="menu-list-item active-page"><a href="" class="link">Студия</a></li>
+                                <li class="menu-list-item active-page"><a href="./index.html" class="link">Студия</a></li>
                                 <li class="menu-list-item"><a href="./portfolio.html" class="link">Потфолио</a></li>
-                                <li class="menu-list-item"><a href="" class="link">Контакты</a></li>
+                                <li class="menu-list-item"><a href="#contacts" class="link">Контакты</a></li>
                             </ul>
 
                             <ul class="list contacts-list">
@@ -78,9 +78,80 @@
         <section class="hero-section overlay">
             <div class="container">         
                 <h1 class="title">Эффективные решения <br /> для вашего бизнеса</h1>
-                <button class="hero-btn" type="button">Заказать услугу</button>
+                <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
+
+        <!-- модальное окно -->
+        
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="modal-btn" data-modal-close>
+                    <svg class="modal-btn-svg">
+                        <use href="./images/icons/sprite.svg#icon-close-modal"></use>
+                    </svg>
+                </button>
+        
+                <form class="hero-form">
+                    <h3 class="hero-form-title">Оставьте свои данные, мы вам перезвоним</h3>
+                    <ul class="list hero-form-list">
+                        <li class="hero-form-list-item">
+                            <label class="form-field">
+                                <span class="form-label">Имя</span>
+                                <div class="icon-position">
+                                    <input type="text" class="form-input" name="name">
+                                    <svg class="form-icon">
+                                        <use href="./images/icons/sprite.svg#icon-name-modal"></use>
+                                    </svg>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="hero-form-list-item">
+                            <label class="form-field">
+                                <span class="form-label">Телефон</span>
+                                <div class="icon-position">
+                                    <input type="tel" class="form-input" name="phone">
+                                    <svg class="form-icon">
+                                        <use href="./images/icons/sprite.svg#icon-phone-modal"></use>
+                                    </svg>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="hero-form-list-item">
+                            <label class="form-field">
+                                <span class="form-label">Почта</span>
+                                <div class="icon-position">
+                                    <input type="email" class="form-input" name="mail">
+                                    <svg class="form-icon">
+                                        <use href="./images/icons/sprite.svg#icon-mail-modal"></use>
+                                    </svg>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="hero-form-list-item">
+                            <label class="form-field">
+                                <span class="form-label">Комментарий</span>
+                                <div class="icon-position">
+                                    <div class="form-comment">
+                                        <textarea class="form-comment-text" name="comment"
+                                            placeholder="Введите текст"></textarea>
+                                    </div>
+                                </div>
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="agreement">
+                        <div class="agree-location">
+                            <input class="agreement-check" type="checkbox" name="">
+                            <p class="agreement-text">Соглашаюсь с рассылкой и принимаю
+                                <a href="" class="agreement-link">Условия договора</a>
+                            </p>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-submit">Отправить</button>
+                </form>
+            </div>
+        </div>
 
         <!-- Наши решения -->
 
@@ -333,7 +404,7 @@
                     <div class="contacts-container">
                         <a href="./index.html" class="link logo-footer">Web<span class="logos-footer">Studio</span></a>
 
-                        <address>
+                        <address id="contacts">
                             <ul class="list address-list">
                                 <li class="address-list-item">
                                     <a href="https://goo.gl/maps/8NoxFLswBQ7MeLdj6" target="_blank" rel="noopener noreferer" class="link">
@@ -401,5 +472,6 @@
     </footer>
     
     <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
