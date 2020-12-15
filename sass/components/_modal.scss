@@ -64,6 +64,10 @@
   @media screen and (max-width: 479px) {
     right: 113px;
   }
+
+  @include for-size(mobile) {
+    right: 33px;
+  }
 }
 
 .btn-submit {
