@@ -9,6 +9,17 @@
   text-decoration: none;
   padding-top: 16px;
   padding-bottom: 16px;
+
+  @include for-size(tablet) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  @include for-size(desktop) {
+    font-size: 26px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .logo-s {
@@ -18,4 +29,28 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+.logo-footer {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.166;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+  margin-bottom: 20px;
+
+  @include for-size(desktop) {
+    font-size: 26px;
+    text-align: left;
+  }
+}
+
+.logos-footer {
+  color: #ffffff;
 }
