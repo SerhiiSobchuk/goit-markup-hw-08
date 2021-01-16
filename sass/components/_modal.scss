@@ -11,12 +11,13 @@
 
   &.is-hidden {
     visibility: hidden;
+    pointer-events: none;
+    transform: opacity(0) scale(0.3);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &.is-hidden .modal {
     transform: opacity(0.5) scale(0.3);
-    pointer-events: none;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -25,7 +26,6 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  transform: opacity(1) scale(1);
   width: 528px;
   height: 581px;
   background: #ffffff;
