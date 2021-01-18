@@ -1,31 +1,30 @@
 .header {
-  position: relative;
-  width: 100%;
+  border: 1px solid #ececec;
 }
 
-.menu-btn {
-  display: block;
-  border: none;
-  background: transparent;
-
-  @include for-size(tablet) {
-    display: none;
-  }
-
-  @include for-size(desktop) {
-    display: none;
-  }
-}
-
-.navigation {
+.nav {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  height: 60px;
 }
 
-.menu-container {
-  position: absolute;
-  width: 100%;
-  top: 100%;
-  left: 0;
-  text-align: center;
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  & .icon-cross {
+    display: none;
+  }
+
+  &.is-open .icon-cross {
+    display: block;
+  }
+
+  &.is-open .icon-menu {
+    display: none;
+  }
 }
