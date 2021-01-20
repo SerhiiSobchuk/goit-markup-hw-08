@@ -28,10 +28,16 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  text-decoration: none;
 }
 
 .container {
