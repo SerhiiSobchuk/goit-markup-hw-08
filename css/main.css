@@ -261,6 +261,18 @@ a {
     font-size: 26px;
     padding-top: 24px;
     padding-bottom: 25px;
+    transform: rotateY(0) scale(1);
+    transition: all 950ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .logo-w:hover, .logo-w:focus {
+    color: black;
+    transform: rotateY(45deg) scale(1.25);
+    transition: all 950ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .logo-w:hover .loso-s,
+  .logo-w:focus .logo-s {
+    color: #2196f3;
+    transition: all 950ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -293,6 +305,18 @@ a {
   .logo-footer {
     font-size: 26px;
     text-align: left;
+    transform: rotateY(0) scale(1);
+    transition: all 950ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .logo-footer:hover, .logo-footer:focus {
+    color: white;
+    transform: rotateY(45deg) scale(1.25);
+    transition: all 950ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .logo-footer:hover .logos-footer,
+  .logo-footer:focus .logos-footer {
+    color: #2196f3;
+    transition: all 950ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 

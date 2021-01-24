@@ -20,6 +20,21 @@
     font-size: 26px;
     padding-top: 24px;
     padding-bottom: 25px;
+    transform: rotateY(0) scale(1);
+    transition: all 950ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: black;
+      transform: rotateY(45deg) scale(1.25);
+      transition: all 950ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover .loso-s,
+    &:focus .logo-s {
+      color: #2196f3;
+      transition: all 950ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
 }
 
@@ -50,6 +65,21 @@
   @include for-size(desktop) {
     font-size: 26px;
     text-align: left;
+    transform: rotateY(0) scale(1);
+    transition: all 950ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: white;
+      transform: rotateY(45deg) scale(1.25);
+      transition: all 950ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover .logos-footer,
+    &:focus .logos-footer {
+      color: #2196f3;
+      transition: all 950ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
 }
 
